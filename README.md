@@ -41,15 +41,11 @@ The CI runner points both builds at the same proxy, and the proxy serves the rec
                     +---------------+---------------+
                     |                               |
                     v                               v
-  +----------------------------------+ +----------------------------------+
-  |    Layer 1: Deterministic Evals  | |     Layer 2: Pairwise Judge      |
-  |  - JSON Schema Validation        | |  - Trajectory Quality Comparison |
-  |  - Step Count / Loop Bounds      | |  - Instruction Adherence         |
-  |  - State Mutation Diffs          | |  - LLM-as-a-Judge Rubrics        |
-  +----------------------------------+ +----------------------------------+
-                    \                               /
-                     \                             /
-                      v                           v
-                  +-----------------------------------+
-                  |   CI Gatekeeper & Quality Report  |
-                  +-----------------------------------+
+
+    Layer 1: Deterministic Evals       Layer 2: Pairwise Judge      
+    - JSON Schema Validation          - Trajectory Quality Comparison 
+    - Step Count / Loop Bounds        - Instruction Adherence         
+    - State Mutation Diffs            - LLM-as-a-Judge Rubrics       
+                  
+                     CI Gatekeeper & Quality Report  
+                 
