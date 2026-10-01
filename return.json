@@ -1,0 +1,13 @@
+{
+  "winner": "BASELINE | CANDIDATE | TIE",
+  "score_delta": -1.5,
+  "criteria_scores": {
+    "correctness_delta": -1.0,
+    "efficiency_delta": -0.5,
+    "tool_accuracy_delta": 0.0,
+    "safety_delta": 0.0
+  },
+  "regression_detected": true,
+  "reasoning": "<concise explanation of which candidate won, and why>",
+  "flagged_issues": ["<specific errors, regressions or tool mistakes found in Candidate B>"]
+}
